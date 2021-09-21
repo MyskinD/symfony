@@ -35,6 +35,7 @@ services:
             - symfony
     php:
         container_name: php
+        restart: unless-stopped
         tty: true
         build:
             context: .
@@ -47,6 +48,7 @@ services:
             - symfony
     nginx:
         container_name: nginx
+        restart: unless-stopped
         tty: true
         build:
             context: .

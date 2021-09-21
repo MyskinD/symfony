@@ -34,8 +34,3 @@ DATABASE_URL=postgresql://127.0.0.1:5432/db?serverVersion=13&charset=utf8 (Postg
 ```
 
 You could change the name, user and password of the database in the `env` file at the root of the project.
-
-#################################################
-
-В папке docker создать двепапки для двух баз данных: mysql, postgresql
-Внутри каждой создать папку dbdata - в них будут храниться рабчие данные из БД, чтобы не потерять при смене контейнеров с БД
